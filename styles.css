@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.jumbotron {
+    background-color: #1B1B6C; 
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.jumbotron p {
+    font-size: 20px;
+}
+
+.primary-btn {
+    background-color: #F61067;
+    color: white;
+    padding: 1px 15px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 100px;
+}
+
+.container {
+    width: 85%;
+    margin: 20px auto;
+}
+
+.main-content {
+    width: 65%;
+    float: left;
+}
+
+.main-content h2 {
+    font-size: 32px;
+    color: #13124F;
+}
+
+.main-content p {
+    color: #9090A5; 
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.video-container {
+    margin: 20px 0;
+}
+
+.sidebar {
+    width: 30%;
+    float: right;
+}
+
+.messages {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.messages button {
+    background-color: #F61067; 
+    color: white;
+    padding: 10px 20px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+.messages button span {
+    background-color: #00008b; 
+    color: white;
+    border-radius: 50%;
+    padding: 3px 7px;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    font-size: 12px;
+}
+.greeting-form {
+    background-color: #F8F9FA;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.greeting-form h3 {
+    font-size: 20px;
+    color: #13124F; 
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.greeting-form p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.greeting-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.greeting-form input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.secondary-btn {
+    background-color: #F61067; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.vote-section {
+    background-color: #F8F9FA;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.vote-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.vote-progress {
+    height: 10px;
+    background-color: #ddd; 
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    display: flex; 
+}
+
+.vote-progress-bar-cool {
+    background-color: #2AD392; 
+    width: 80%; 
+    border-radius: 5px 0 0 5px; 
+}
+
+.vote-progress-bar-lame {
+    background-color: #F61067; 
+    width: 20%; 
+    border-radius: 0 5px 5px 0; 
+}
+
+.vote-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.vote-buttons button {
+    padding: 10px 20px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.cool-btn {
+    background-color: #2AD392; 
+    margin-right: 10px;
+}
+
+.lame-btn {
+    background-color: #F61067; 
+}
+.vote-progress {
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.vote-progress-bar {
+    height: 100%;
+    background-color: #2AD392; 
+    width: 100%; 
+}
+
+
+footer {
+    background-color: #13124F; 
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .main-content, .sidebar {
+        width: 100%;
+        float: none;
+    }
+}
